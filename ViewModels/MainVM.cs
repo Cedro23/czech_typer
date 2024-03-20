@@ -11,8 +11,8 @@ namespace CzechTyper.ViewModels
 {
     public class MainVM : ViewModelBase
     {
-        private readonly Icon _onIcon = new Icon("C:\\Users\\CLR\\Documents\\Dev\\_Tests\\CzechTyper\\Resources\\Flag_of_the_Czech_Republic.ico");
-        private readonly Icon _offIcon = new Icon("C:\\Users\\CLR\\Documents\\Dev\\_Tests\\CzechTyper\\Resources\\Flag_of_the_Czech_Republic_Grey.ico");
+        private readonly Icon _onIcon = Properties.Resources.Flag_of_the_Czech_Republic;
+        private readonly Icon _offIcon = Properties.Resources.Flag_of_the_Czech_Republic_Grey;
         private NotifyIcon _notifyIcon;
 
         private bool _isHooked = false;
