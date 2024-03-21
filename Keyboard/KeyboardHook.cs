@@ -70,35 +70,35 @@ namespace CzechTyper.Keyboard
                     {
                         case Keys.A:
                             HandleKey('á', 'Á');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.C:
                             HandleKey('č', 'Č');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.D:
                             HandleKey('ď', 'Ď');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.E:
                             _inputSimulator.Keyboard.TextEntry(IsCapital() ? 'Ě' : 'ě');
                             StateMachine.Reset();
                             return (IntPtr)1; // Block the default behavior
                         case Keys.I:
                             HandleKey('í', 'Í');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.N:
                             HandleKey('ň', 'Ň');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.O:
                             HandleKey('ó', 'Ó');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.R:
                             HandleKey('ř', 'Ř');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.S:
                             HandleKey('š', 'Š');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.T:
                             HandleKey('ť', 'Ť');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.U:
                             StateMachine.Update(key);
                             if (StateMachine.IsDoublePress(key))
@@ -119,10 +119,10 @@ namespace CzechTyper.Keyboard
                             return (IntPtr)1; // Block the default behavior
                         case Keys.Y:
                             HandleKey('ý', 'Ý');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                         case Keys.Z:
                             HandleKey('ž', 'Ž');
-                            break;
+                            return (IntPtr)1; // Block the default behavior
                     }
                 }
                 else
